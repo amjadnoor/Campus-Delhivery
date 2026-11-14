@@ -1,0 +1,20 @@
+[project]
+name = "Campus-Delhivery"
+version = "0.1.0"
+description = "Campus Delhivery App by Peers"
+readme = "README.md"
+authors = [
+    { name = "amjadnoor", email = "nooramjadmail.com@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.7",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+campus-delhivery = "campus_delhivery:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
